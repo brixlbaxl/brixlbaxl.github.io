@@ -56,9 +56,9 @@ var App = React.createClass({
 					The current time in Carl Land is
 					</h2>
 					<div>
-						<b className="text-uppercase">
+						<p className="img-circle text-uppercase">
 						{this.getRandomHour()}
-						</b>
+						</p>
 					</div> 
 					<h2 className="page-header">
 					o&#39;clock!
