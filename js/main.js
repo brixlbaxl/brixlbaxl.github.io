@@ -62,12 +62,20 @@ var App = React.createClass({
 				React.createElement(
 					"h2",
 					{ className: "page-header" },
-					"The current time in Carl Land is",
+					"The current time in Carl Land is"
+				),
+				React.createElement(
+					"div",
+					null,
 					React.createElement(
 						"b",
 						{ className: "text-uppercase" },
 						this.getRandomHour()
-					),
+					)
+				),
+				React.createElement(
+					"h2",
+					{ className: "page-header" },
 					"o'clock!"
 				)
 			)
