@@ -14,7 +14,7 @@ var App = React.createClass({
 				"root beer",
 				"craigslist",
 				"study",
-				"DENNY CRANE"
+				"denny crane"
 			]	
 		};
 	},
@@ -35,7 +35,7 @@ var App = React.createClass({
 		});
 
 		return (
-			<div className="row" >
+			<div className="container" >
 				<div className="row">
 					<div className="jumbotron">
 						<h1 className="page-header">
@@ -51,9 +51,13 @@ var App = React.createClass({
 						{favoriteThings}
 					</ul>
 				</div>
-				<div>
-					<h2>
-					The current time in Carl Land is <b>{this.getRandomHour()}</b> o&#29;clock!
+				<div className="row">
+					<h2 className="page-header">
+					The current time in Carl Land is
+						<b className="text-uppercase">
+						{this.getRandomHour()}
+						</b> 
+					o&#39;clock!
 					</h2>
 				</div>
 			</div>

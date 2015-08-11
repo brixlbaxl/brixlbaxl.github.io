@@ -6,7 +6,7 @@ var App = React.createClass({
 	getInitialState: function getInitialState() {
 		return {
 			favoriteThings: ["zooping the doop", "wood burning", "drinking tea", "hanging with good pals"],
-			carlHours: ["jeepers", "carl", "root beer", "craigslist", "study", "DENNY CRANE"]
+			carlHours: ["jeepers", "carl", "root beer", "craigslist", "study", "denny crane"]
 		};
 	},
 
@@ -28,7 +28,7 @@ var App = React.createClass({
 
 		return React.createElement(
 			"div",
-			{ className: "row" },
+			{ className: "container" },
 			React.createElement(
 				"div",
 				{ className: "row" },
@@ -58,17 +58,17 @@ var App = React.createClass({
 			),
 			React.createElement(
 				"div",
-				null,
+				{ className: "row" },
 				React.createElement(
 					"h2",
-					null,
-					"The current time in Carl Land is ",
+					{ className: "page-header" },
+					"The current time in Carl Land is",
 					React.createElement(
 						"b",
-						null,
+						{ className: "text-uppercase" },
 						this.getRandomHour()
 					),
-					" o\u001dclock!"
+					"o'clock!"
 				)
 			)
 		);
