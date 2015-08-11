@@ -3,7 +3,20 @@
 var App = React.createClass({
 	displayName: "App",
 
+	getInitialState: function getInitialState() {
+		favoriteThings: ["zooping the doop", "wood burning", "drinking tea", "hanging with good pals"];
+	},
+
 	render: function render() {
+
+		var favoriteThings = this.state.favoriteThings.map(function (thing) {
+			return React.createElement(
+				"p",
+				null,
+				thing
+			);
+		});
+
 		return React.createElement(
 			"div",
 			{ className: "container-fluid" },
@@ -13,10 +26,23 @@ var App = React.createClass({
 				React.createElement(
 					"h1",
 					{ className: "page-header" },
-					"Welcome to the Carl Network!"
+					"Welcome to Carl!"
 				)
 			),
-			React.createElement("div", null)
+			React.createElement(
+				"div",
+				null,
+				React.createElement(
+					"p",
+					null,
+					"These are a few of my favorite things!"
+				),
+				React.createElement(
+					"div",
+					null,
+					favoriteThings
+				)
+			)
 		);
 	}
 });

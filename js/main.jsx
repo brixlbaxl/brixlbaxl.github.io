@@ -1,15 +1,35 @@
 var App = React.createClass({
 	
+	getInitialState: function() {
+		favoriteThings: [
+			"zooping the doop",
+			"wood burning",
+			"drinking tea",
+			"hanging with good pals"
+		]
+	},
+
 
 	render: function() {
+		
+		var favoriteThings = this.state.favoriteThings.map(function(thing) {
+			return (
+					<p>{thing}</p>
+				);
+		});
+
 		return (
 			<div className="container-fluid">
 				<div className="jumbotron">
 					<h1 className="page-header">
-						Welcome to the Carl Network!
+						Welcome to Carl!
 					</h1>
 				</div>
 				<div>
+					<p>These are a few of my favorite things!</p>
+					<div>
+						{favoriteThings}
+					</div>
 				</div>
 			</div>
 			);
