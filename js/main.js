@@ -24,19 +24,23 @@ var App = React.createClass({
 			{ className: "row" },
 			React.createElement(
 				"div",
-				{ className: "row jumbotron" },
+				{ className: "row" },
 				React.createElement(
-					"h1",
-					{ className: "page-header" },
-					"Welcome to Carl!"
+					"div",
+					{ className: "jumbotron" },
+					React.createElement(
+						"h1",
+						{ className: "page-header" },
+						"Welcome to Carl!"
+					)
 				)
 			),
 			React.createElement(
 				"div",
-				{ className: "row" },
+				{ className: "row invisible" },
 				React.createElement(
-					"p",
-					null,
+					"h2",
+					{ className: "page-header" },
 					"These are a few of my favorite things!"
 				),
 				React.createElement(

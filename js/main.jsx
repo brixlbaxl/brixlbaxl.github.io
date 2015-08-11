@@ -22,13 +22,17 @@ var App = React.createClass({
 
 		return (
 			<div className="row" >
-				<div className="row jumbotron">
-					<h1 className="page-header">
-						Welcome to Carl!
-					</h1>
+				<div className="row">
+					<div className="jumbotron">
+						<h1 className="page-header">
+							Welcome to Carl!
+						</h1>
+					</div>
 				</div>
-				<div className="row" >
-					<p>These are a few of my favorite things!</p>
+				<div className="row invisible" >
+					<h2 className="page-header">
+					These are a few of my favorite things!
+					</h2>
 					<ul>
 						{favoriteThings}
 					</ul>
