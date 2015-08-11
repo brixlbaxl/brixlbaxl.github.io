@@ -13,7 +13,7 @@ var App = React.createClass({
 
 		var favoriteThings = this.state.favoriteThings.map(function (thing) {
 			return React.createElement(
-				"p",
+				"li",
 				null,
 				thing
 			);
@@ -40,7 +40,7 @@ var App = React.createClass({
 					"These are a few of my favorite things!"
 				),
 				React.createElement(
-					"div",
+					"ul",
 					null,
 					favoriteThings
 				)

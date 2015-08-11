@@ -16,7 +16,7 @@ var App = React.createClass({
 		
 		var favoriteThings = this.state.favoriteThings.map(function(thing) {
 			return (
-					<p>{thing}</p>
+					<li>{thing}</li>
 				);
 		});
 
@@ -29,9 +29,9 @@ var App = React.createClass({
 				</div>
 				<div>
 					<p>These are a few of my favorite things!</p>
-					<div>
+					<ul>
 						{favoriteThings}
-					</div>
+					</ul>
 				</div>
 			</div>
 			);
