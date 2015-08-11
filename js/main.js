@@ -21,10 +21,10 @@ var App = React.createClass({
 
 		return React.createElement(
 			"div",
-			null,
+			{ className: "row" },
 			React.createElement(
 				"div",
-				{ className: "jumbotron" },
+				{ className: "row jumbotron" },
 				React.createElement(
 					"h1",
 					{ className: "page-header" },
@@ -33,7 +33,7 @@ var App = React.createClass({
 			),
 			React.createElement(
 				"div",
-				null,
+				{ className: "row" },
 				React.createElement(
 					"p",
 					null,
