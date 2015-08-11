@@ -68,7 +68,7 @@ var App = React.createClass({
 					"div",
 					null,
 					React.createElement(
-						"p",
+						"big",
 						{ className: "img-circle text-uppercase" },
 						this.getRandomHour()
 					)
