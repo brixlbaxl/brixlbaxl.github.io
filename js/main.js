@@ -5,8 +5,15 @@ var App = React.createClass({
 
 	getInitialState: function getInitialState() {
 		return {
-			favoriteThings: ["zooping the doop", "wood burning", "drinking tea", "hanging with good pals"]
+			favoriteThings: ["zooping the doop", "wood burning", "drinking tea", "hanging with good pals"],
+			carlHours: ["jeepers", "carl", "root beer", "craigslist", "study", "DENNY CRANE"]
 		};
+	},
+
+	getRandomHour: function getRandomHour() {
+		var len = this.state.carlHours.length;
+		var randomIndex = Math.floor(Math.random() * len);
+		return this.state.carlHours[randomIndex];
 	},
 
 	render: function render() {
@@ -47,6 +54,21 @@ var App = React.createClass({
 					"ul",
 					null,
 					favoriteThings
+				)
+			),
+			React.createElement(
+				"div",
+				null,
+				React.createElement(
+					"h2",
+					null,
+					"The current time in Carl Land is ",
+					React.createElement(
+						"b",
+						null,
+						this.getRandomHour()
+					),
+					" o\u001dclock!"
 				)
 			)
 		);

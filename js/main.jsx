@@ -7,8 +7,22 @@ var App = React.createClass({
 				"wood burning",
 				"drinking tea",
 				"hanging with good pals"
-			]		
+			],
+			carlHours: [
+				"jeepers",
+				"carl",
+				"root beer",
+				"craigslist",
+				"study",
+				"DENNY CRANE"
+			]	
 		};
+	},
+
+	getRandomHour: function() {
+		var len = this.state.carlHours.length;
+		var randomIndex = Math.floor(Math.random()*len);
+		return this.state.carlHours[randomIndex];
 	},
 
 
@@ -36,6 +50,11 @@ var App = React.createClass({
 					<ul>
 						{favoriteThings}
 					</ul>
+				</div>
+				<div>
+					<h2>
+					The current time in Carl Land is <b>{this.getRandomHour()}</b> o&#29;clock!
+					</h2>
 				</div>
 			</div>
 			);
