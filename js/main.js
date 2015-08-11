@@ -4,7 +4,9 @@ var App = React.createClass({
 	displayName: "App",
 
 	getInitialState: function getInitialState() {
-		favoriteThings: ["zooping the doop", "wood burning", "drinking tea", "hanging with good pals"];
+		return {
+			favoriteThings: ["zooping the doop", "wood burning", "drinking tea", "hanging with good pals"]
+		};
 	},
 
 	render: function render() {

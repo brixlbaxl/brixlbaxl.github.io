@@ -1,12 +1,14 @@
 var App = React.createClass({
 	
 	getInitialState: function() {
-		favoriteThings: [
-			"zooping the doop",
-			"wood burning",
-			"drinking tea",
-			"hanging with good pals"
-		]
+		return {
+			favoriteThings: [
+				"zooping the doop",
+				"wood burning",
+				"drinking tea",
+				"hanging with good pals"
+			]		
+		};
 	},
 
 
