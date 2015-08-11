@@ -21,7 +21,7 @@ var App = React.createClass({
 
 		return React.createElement(
 			"div",
-			{ className: "container" },
+			null,
 			React.createElement(
 				"div",
 				{ className: "jumbotron" },

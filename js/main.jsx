@@ -21,7 +21,7 @@ var App = React.createClass({
 		});
 
 		return (
-			<div className="container">
+			<div >
 				<div className="jumbotron">
 					<h1 className="page-header">
 						Welcome to Carl!
