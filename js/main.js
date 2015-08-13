@@ -50,7 +50,7 @@ var App = React.createClass({
 			React.createElement(
 				"div",
 				{ className: "row" },
-				React.createElement("iframe", { width: screen.width, height: screen.height,
+				React.createElement("iframe", { width: window.screen.availWidth, height: window.screen.availHeight,
 					src: "https://www.youtube.com/embed/7Lta2UBcnjU?autoplay=1&controls=0&start=19&end=110&loop=1",
 					frameborder: "0", allowfullscreen: true })
 			),
