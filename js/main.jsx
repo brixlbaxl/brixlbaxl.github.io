@@ -48,7 +48,7 @@ var App = React.createClass({
 				</div>
 				<div className="row">
 					<iframe width="854" height="480" 
-					src="https://www.youtube.com/embed/7Lta2UBcnjU" 
+					src="https://www.youtube.com/embed/7Lta2UBcnjU?autoplay=1&controls=0&start=19&end=110&loop=1" 
 					frameborder="0" allowfullscreen></iframe>
 				</div>
 
