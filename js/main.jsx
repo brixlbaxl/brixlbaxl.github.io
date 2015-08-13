@@ -41,6 +41,9 @@ var App = React.createClass({
 						<h1 className="page-header">
 							Welcome to Carl!
 						</h1>
+						<h3>
+						(work in progress... please don&#39;t judge me)
+						</h3>
 					</div>
 				</div>
 				<div className="row invisible" >
