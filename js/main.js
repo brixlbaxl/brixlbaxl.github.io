@@ -39,6 +39,11 @@ var App = React.createClass({
 						"h1",
 						{ className: "page-header" },
 						"Welcome to Carl!"
+					),
+					React.createElement(
+						"h3",
+						null,
+						"(work in progress... please don't judge me)"
 					)
 				)
 			),
