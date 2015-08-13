@@ -46,14 +46,12 @@ var App = React.createClass({
 						</h3>
 					</div>
 				</div>
-				<div className="row invisible" >
-					<h2 className="page-header">
-					These are a few of my favorite things!
-					</h2>
-					<ul>
-						{favoriteThings}
-					</ul>
+				<div className="row">
+					<iframe width="854" height="480" 
+					src="https://www.youtube.com/embed/7Lta2UBcnjU" 
+					frameborder="0" allowfullscreen></iframe>
 				</div>
+
 				<div className="row">
 					<h2 className="page-header">
 					The current time in Carl Land is
@@ -67,6 +65,16 @@ var App = React.createClass({
 					o&#39;clock!
 					</h2>
 				</div>
+
+				<div className="row invisible" >
+					<h2 className="page-header">
+					These are a few of my favorite things!
+					</h2>
+					<ul>
+						{favoriteThings}
+					</ul>
+				</div>
+
 			</div>
 			);
 	}

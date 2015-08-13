@@ -49,17 +49,10 @@ var App = React.createClass({
 			),
 			React.createElement(
 				"div",
-				{ className: "row invisible" },
-				React.createElement(
-					"h2",
-					{ className: "page-header" },
-					"These are a few of my favorite things!"
-				),
-				React.createElement(
-					"ul",
-					null,
-					favoriteThings
-				)
+				{ className: "row" },
+				React.createElement("iframe", { width: "854", height: "480",
+					src: "https://www.youtube.com/embed/7Lta2UBcnjU",
+					frameborder: "0", allowfullscreen: true })
 			),
 			React.createElement(
 				"div",
@@ -82,6 +75,20 @@ var App = React.createClass({
 					"h2",
 					{ className: "page-header" },
 					"o'clock!"
+				)
+			),
+			React.createElement(
+				"div",
+				{ className: "row invisible" },
+				React.createElement(
+					"h2",
+					{ className: "page-header" },
+					"These are a few of my favorite things!"
+				),
+				React.createElement(
+					"ul",
+					null,
+					favoriteThings
 				)
 			)
 		);
