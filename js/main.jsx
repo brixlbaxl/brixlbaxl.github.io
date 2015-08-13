@@ -34,6 +34,8 @@ var App = React.createClass({
 				);
 		});
 
+
+
 		return (
 			<div className="container" >
 				<div className="row">
@@ -47,9 +49,11 @@ var App = React.createClass({
 					</div>
 				</div>
 				<div className="row">
-					<iframe width="250" height="300"
-					src="https://www.youtube.com/embed/7Lta2UBcnjU?autoplay=1&controls=0&start=19&end=110" 
-					frameborder="0" allowfullscreen></iframe>
+					<div className="embed-responsive embed-responsive-16by9">
+						<iframe className="embed-responsive-item"
+						src="https://www.youtube.com/embed/7Lta2UBcnjU?autoplay=1&controls=0&start=20&end=112" 
+						allowfullscreen></iframe>
+					</div>
 				</div>
 
 				<div className="row">

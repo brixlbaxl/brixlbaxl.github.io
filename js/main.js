@@ -50,9 +50,13 @@ var App = React.createClass({
 			React.createElement(
 				"div",
 				{ className: "row" },
-				React.createElement("iframe", { width: "250", height: "300",
-					src: "https://www.youtube.com/embed/7Lta2UBcnjU?autoplay=1&controls=0&start=19&end=110",
-					frameborder: "0", allowfullscreen: true })
+				React.createElement(
+					"div",
+					{ className: "embed-responsive embed-responsive-16by9" },
+					React.createElement("iframe", { className: "embed-responsive-item",
+						src: "https://www.youtube.com/embed/7Lta2UBcnjU?autoplay=1&controls=0&start=20&end=112",
+						allowfullscreen: true })
+				)
 			),
 			React.createElement(
 				"div",
