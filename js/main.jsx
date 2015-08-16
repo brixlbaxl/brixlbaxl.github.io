@@ -1,92 +1,32 @@
-var App = React.createClass({
-	
-	getInitialState: function() {
-		return {
-			favoriteThings: [
-				"zooping the doop",
-				"wood burning",
-				"drinking tea",
-				"hanging with good pals"
-			],
-			carlHours: [
-				"jeepers",
-				"carl",
-				"root beer",
-				"craigslist",
-				"study",
-				"denny crane"
-			]	
-		};
-	},
-
-	getRandomHour: function() {
-		var len = this.state.carlHours.length;
-		var randomIndex = Math.floor(Math.random()*len);
-		return this.state.carlHours[randomIndex];
-	},
-
+var SweetVideo = React.createClass({
 
 	render: function() {
-		
-		var favoriteThings = this.state.favoriteThings.map(function(thing) {
-			return (
-					<li>{thing}</li>
-				);
-		});
+		return (
+			<div className="embed-responsive embed-responsive-16by9">
+				<iframe className="embed-responsive-item"
+				src={''.concat('https://www.youtube.com/embed/7Lta2UBcnjU',
+								'?autoplay=1',
+								'&controls=0',
+								'&start=20',
+								'&end=112',
+								'&modestbranding=1',
+								'&rel=0',
+								'&showinfo=0',
+								'&iv_load_policy=3')} 
+				></iframe>
+			</div>
+			);
+	}
+});
 
+var App = React.createClass({
+	
 
+	render: function() {
 
 		return (
 			<div className="container" >
-				<div className="row">
-					<div className="jumbotron">
-						<h1 className="page-header">
-							Welcome to Carl!
-						</h1>
-						<h3>
-						(work in progress... please don&#39;t judge me)
-						</h3>
-					</div>
-				</div>
-				<div className="row">
-					<div className="embed-responsive embed-responsive-16by9">
-						<iframe className="embed-responsive-item"
-						src={''.concat('https://www.youtube.com/embed/7Lta2UBcnjU',
-										'?autoplay=1',
-										'&controls=0',
-										'&start=20',
-										'&end=112',
-										'&modestbranding=1',
-										'&rel=0',
-										'&showinfo=0',
-										'&iv_load_policy=3')} 
-						></iframe>
-					</div>
-				</div>
-
-				<div className="row">
-					<h2 className="page-header">
-					The current time in Carl Land is
-					</h2>
-					<div>
-						<big className="img-circle text-uppercase">
-						{this.getRandomHour()}
-						</big>
-					</div> 
-					<h2 className="page-header">
-					o&#39;clock!
-					</h2>
-				</div>
-
-				<div className="row invisible" >
-					<h2 className="page-header">
-					These are a few of my favorite things!
-					</h2>
-					<ul>
-						{favoriteThings}
-					</ul>
-				</div>
-
+				<SweetVideo />
 			</div>
 			);
 	}
