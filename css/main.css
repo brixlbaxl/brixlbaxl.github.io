@@ -12,30 +12,52 @@ html, body {
 	width: fill;
 }
 
+.no-margin {
+	margin: 0;
+}
+
 .middle {
-	padding-top: 50%;
+	padding-top: 50vh;
 }
 
 .red {
-	background-color: #f00;
+	background-color: #ff0000;
 }
 
-.blue {
-	background-color: #00f;
-}
-
-.green {
-	background-color: #0f0;
+.orange {
+	background-color: #ff7f00
 }
 
 .yellow {
-	background-color: #ff0;
+	background-color: #ffff00;
 }
 
+.green {
+	background-color: #00ff00;
+}
+
+.blue {
+	background-color: #0000ff;
+}
+
+
+.indigo {
+	background-color: #4b0082;
+}
+
+.violet {
+	background-color: #8f00ff;
+}
+
+
 .black {
-	background-color: #000;
+	background-color: #000000;
 }
 
 .whiteText {
 	color: #fff;
+}
+
+.bigText {
+	font-size: 300%;
 }

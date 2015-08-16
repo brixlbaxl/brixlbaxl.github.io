@@ -3,30 +3,46 @@ var SiteSlides = React.createClass({
 	render: function(){
 		return (
 			<div >
+
 				<div className="slide">
 					<SweetVideo />
 				</div>
-				<div className="slide red"></div>
-				<div className="slide green"></div>
-				<div className="slide blue"></div>
-				<div className="slide yellow"></div>
-				<div className="slide red"></div>
-				<div className="slide green"></div>
-				<div className="slide blue"></div>
-				<div className="slide yellow"></div>
-				<div className="slide red"></div>
-				<div className="slide green"></div>
-				<div className="slide blue"></div>
-				<div className="slide yellow"></div>
-				<div className="slide red"></div>
-				<div className="slide green"></div>
-				<div className="slide blue"></div>
-				<div className="slide yellow"></div>
-				<div className="slide black">
-					<center className="middle whiteText">
-					Thanks for stopping by! <small>- Carl</small>
-					</center>
+
+				<div className="slide red">
+
 				</div>
+
+				<div className="slide orange">
+
+				</div>
+
+				<div className="slide yellow">
+
+				</div>
+
+				<div className="slide green">
+
+				</div>
+
+				<div className="slide blue">
+
+				</div>
+
+				<div className="slide indigo">
+
+				</div>
+
+				<div className="slide violet">
+
+				</div>
+
+				<div className="slide black">
+					<center className="middle bigText whiteText">
+					Thanks for stopping by! 
+					</center>
+					<small>- Carl</small>
+				</div>
+
 			</div>
 			);
 	}
