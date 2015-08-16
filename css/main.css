@@ -2,10 +2,40 @@
 	text-align: center;
 }
 
-html { 
-  background: url('../res/hands.jpg') repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+html, body { 
+  height: 100%;
+  width: 100%;
+}
+
+.slide {
+	height: 100vh;
+	width: fill;
+}
+
+.middle {
+	padding-top: 50%;
+}
+
+.red {
+	background-color: #f00;
+}
+
+.blue {
+	background-color: #00f;
+}
+
+.green {
+	background-color: #0f0;
+}
+
+.yellow {
+	background-color: #ff0;
+}
+
+.black {
+	background-color: #000;
+}
+
+.whiteText {
+	color: #fff;
 }

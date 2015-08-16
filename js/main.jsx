@@ -1,8 +1,42 @@
+var SiteSlides = React.createClass({
+
+	render: function(){
+		return (
+			<div >
+				<div className="slide">
+					<SweetVideo />
+				</div>
+				<div className="slide red"></div>
+				<div className="slide green"></div>
+				<div className="slide blue"></div>
+				<div className="slide yellow"></div>
+				<div className="slide red"></div>
+				<div className="slide green"></div>
+				<div className="slide blue"></div>
+				<div className="slide yellow"></div>
+				<div className="slide red"></div>
+				<div className="slide green"></div>
+				<div className="slide blue"></div>
+				<div className="slide yellow"></div>
+				<div className="slide red"></div>
+				<div className="slide green"></div>
+				<div className="slide blue"></div>
+				<div className="slide yellow"></div>
+				<div className="slide black">
+					<center className="middle whiteText">
+					Thanks for stopping by! <small>- Carl</small>
+					</center>
+				</div>
+			</div>
+			);
+	}
+});
+
 var SweetVideo = React.createClass({
 
 	render: function() {
 		return (
-			<div className="embed-responsive embed-responsive-16by9">
+			<div className="slide embed-responsive embed-responsive-16by9">
 				<iframe className="embed-responsive-item"
 				src={''.concat('https://www.youtube.com/embed/7Lta2UBcnjU',
 								'?autoplay=1',
@@ -25,8 +59,8 @@ var App = React.createClass({
 	render: function() {
 
 		return (
-			<div className="container" >
-				<SweetVideo />
+			<div  >
+				<SiteSlides />
 			</div>
 			);
 	}
