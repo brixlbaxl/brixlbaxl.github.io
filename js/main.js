@@ -15,37 +15,65 @@ var SiteSlides = React.createClass({
 			React.createElement(
 				"div",
 				{ className: "slide red" },
-				"Hey"
+				React.createElement(
+					"center",
+					{ className: "middle bigText whiteText" },
+					"Hey"
+				)
 			),
 			React.createElement(
 				"div",
 				{ className: "slide orange" },
-				"Hey"
+				React.createElement(
+					"center",
+					{ className: "middle bigText whiteText" },
+					"Hey"
+				)
 			),
 			React.createElement(
 				"div",
 				{ className: "slide yellow" },
-				"Hey"
+				React.createElement(
+					"center",
+					{ className: "middle bigText whiteText" },
+					"Hey"
+				)
 			),
 			React.createElement(
 				"div",
 				{ className: "slide green" },
-				"Hey"
+				React.createElement(
+					"center",
+					{ className: "middle bigText whiteText" },
+					"Hey"
+				)
 			),
 			React.createElement(
 				"div",
 				{ className: "slide blue" },
-				"Needle"
+				React.createElement(
+					"center",
+					{ className: "middle bigText whiteText" },
+					"Needle"
+				)
 			),
 			React.createElement(
 				"div",
 				{ className: "slide indigo" },
-				"Hey"
+				React.createElement(
+					"center",
+					{ className: "middle bigText whiteText" },
+					"Hey"
+				)
 			),
 			React.createElement(
 				"div",
 				{ className: "slide violet" },
-				"Hey"
+				React.createElement(
+					"center",
+					{ className: "middle bigText whiteText" },
+					"Hey"
+				)
 			),
 			React.createElement(
 				"div",

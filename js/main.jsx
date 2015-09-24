@@ -9,31 +9,45 @@ var SiteSlides = React.createClass({
 				</div>
 
 				<div className="slide red">
-				Hey
+					<center className="middle bigText whiteText">
+						Hey
+					</center>
 				</div>
 
 				<div className="slide orange">
-				Hey
+					<center className="middle bigText whiteText">
+						Hey
+					</center>
 				</div>
 
 				<div className="slide yellow">
-				Hey
+					<center className="middle bigText whiteText">
+						Hey
+					</center>
 				</div>
 
 				<div className="slide green">
-				Hey
+					<center className="middle bigText whiteText">
+						Hey
+					</center>
 				</div>
 
 				<div className="slide blue">
-				Needle
+					<center className="middle bigText whiteText">
+						Needle
+					</center>
 				</div>
 
 				<div className="slide indigo">
-				Hey
+					<center className="middle bigText whiteText">
+						Hey
+					</center>
 				</div>
 
 				<div className="slide violet">
-				Hey
+					<center className="middle bigText whiteText">
+						Hey
+					</center>
 				</div>
 
 				<div className="slide black">
