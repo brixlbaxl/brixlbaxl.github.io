@@ -12,13 +12,41 @@ var SiteSlides = React.createClass({
 				{ className: "slide" },
 				React.createElement(SweetVideo, null)
 			),
-			React.createElement("div", { className: "slide red" }),
-			React.createElement("div", { className: "slide orange" }),
-			React.createElement("div", { className: "slide yellow" }),
-			React.createElement("div", { className: "slide green" }),
-			React.createElement("div", { className: "slide blue" }),
-			React.createElement("div", { className: "slide indigo" }),
-			React.createElement("div", { className: "slide violet" }),
+			React.createElement(
+				"div",
+				{ className: "slide red" },
+				"Hey"
+			),
+			React.createElement(
+				"div",
+				{ className: "slide orange" },
+				"Hey"
+			),
+			React.createElement(
+				"div",
+				{ className: "slide yellow" },
+				"Hey"
+			),
+			React.createElement(
+				"div",
+				{ className: "slide green" },
+				"Hey"
+			),
+			React.createElement(
+				"div",
+				{ className: "slide blue" },
+				"Needle"
+			),
+			React.createElement(
+				"div",
+				{ className: "slide indigo" },
+				"Hey"
+			),
+			React.createElement(
+				"div",
+				{ className: "slide violet" },
+				"Hey"
+			),
 			React.createElement(
 				"div",
 				{ className: "slide black" },
